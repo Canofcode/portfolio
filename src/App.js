@@ -1,12 +1,12 @@
 import React from "react";
 import Router from "./Components/Router";
-import Nav from "./Components/Nav";
+import Navb from "./Components/Navb";
 import "./style.css";
 
 const App = () => {
   return (
     <div>
-      <Nav />
+      <Navb />
       <Router />
     </div>
   );

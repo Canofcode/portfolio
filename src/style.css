@@ -1,8 +1,21 @@
 body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .nav--ul {
     margin: 0px;
+}
+
+.navbar--brand {
+    margin: 0px;
+    padding: 0px 0px 0px 30px;
+    color: #55508E;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar--navlink {
 }

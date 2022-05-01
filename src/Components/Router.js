@@ -7,7 +7,7 @@ import Contact from "../Pages/Contact";
 const Router = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Homepage />}></Route>
+      <Route exact path="/home" element={<Homepage />}></Route>
 
       <Route exact path="/about" element={<About />}></Route>
 
