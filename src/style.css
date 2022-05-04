@@ -1,21 +1,105 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav--ul {
-    margin: 0px;
+  margin: 0px;
 }
 
 .navbar--brand {
-    margin: 0px;
-    padding: 0px 0px 0px 30px;
-    color: #55508E;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  margin: 0px;
+  padding: 0px 0px 0px 30px;
+  color: #55508e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.navbar--navlink {
+.navbar--color {
+    background-color: #ffffff;
 }
+
+.navb--navbar-align-right {
+  justify-content: end;
+  margin-left: 18px;
+  margin-right: 200px;
+}
+
+.home--background-style {
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+}
+
+.home--background-text-1 {
+    background-image: url("./Images/smbgtxt.jpg");
+}
+
+.home--background-text-2 {
+    background-image: none;
+}
+
+.home--title {
+    font-weight: bold;
+    font-size: 64px;
+    color: #55508E;
+    margin-top: 60px;
+}
+
+.home--title-blurb {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #7B7B7B;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.home--desc {
+    background-color: #55508e;
+    color: #ffffff;
+}
+
+.home--desc-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #55508e;
+}
+
+.home--projects-background-text {
+    background-image: url("./Images/lgfpbgtxt.jpg");
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .home--background-text-1 { 
+        background-image: none;
+    }
+
+    .home--background-text-2 { 
+        background-image: url("./Images/lgbgtxt.jpg");
+        padding: none;
+    }
+
+    .home--title {
+        font-weight: bold;
+        font-size: 8rem;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }

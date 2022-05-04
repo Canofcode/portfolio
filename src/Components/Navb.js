@@ -8,20 +8,23 @@ import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 const Navb = () => {
   return (
     <div>
-      <Navbar bg="light" varient="light" expand="sm" collapseOnSelect>
-        <Navbar.Brand style={{ color: "#55508E" }}>
+      <Navbar bg="navbar--color" expand="md" collapseOnSelect>
+        <Navbar.Brand style={{ color: "#55508E", margin: "8px 0px 0px 20px" }}>
           <h3>KD</h3>
         </Navbar.Brand>
 
         <Navbar.Toggle />
-        <NavbarCollapse>
-          <Nav className="d-flex align-content-end">
+        <NavbarCollapse className="navb--navbar-align-right">
+          <Nav>
             <Nav.Link as={Link} to="/home" href="/home">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" href="/about">
-              About
+            <Nav.Link to="#projects" href="#projects">
+              Projects
             </Nav.Link>
+            {/* <Nav.Link as={Link} to="/about" href="/about">
+              About
+            </Nav.Link> */}
             <Nav.Link as={Link} to="/contact" href="/contact">
               Contact
             </Nav.Link>
