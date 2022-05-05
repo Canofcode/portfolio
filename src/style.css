@@ -86,6 +86,18 @@ body {
     text-underline-offset: -30px;
 }
 
+.purple {
+    color: #55508E;
+}
+
+.home--date-two {
+    margin-top: 83px;
+}
+
+.home--proj-name-two {
+
+}
+
 .pos-bottom-right {
     bottom: 0;
     right: 0;
@@ -110,6 +122,12 @@ body {
 
 .btnArrow { 
     width: 40%;
+}
+
+.home--proj-two-text {
+    background-color: #FFFDD0;
+    color: #55508e;
+    height: 350px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -139,7 +157,18 @@ body {
     .home--proj-date {
         text-underline-offset: -35px;
     }
+
+    .home--date-two {
+        margin-top: 56px;
+    }
+
+    .home--proj-two-text {
+        width: 100%;
+        height: 100%;
+    }
 }
+
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { }
