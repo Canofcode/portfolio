@@ -13,7 +13,7 @@ const Navb = () => {
           <h3>KD</h3>
         </Navbar.Brand>
 
-        <Navbar.Toggle />
+        <Navbar.Toggle className="me-4" style={{ background: "#ffffff", outline: "none", boxShadow: "none" }} />
         <NavbarCollapse className="navb--navbar-align-right">
           <Nav>
             <Nav.Link as={Link} to="/home" href="/home">

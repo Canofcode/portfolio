@@ -73,6 +73,44 @@ body {
     background-image: url("./Images/lgfpbgtxt.jpg");
 }
 
+.home--proj-name {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.home--proj-date {
+    text-underline-offset: -30px;
+}
+
+.pos-bottom-right {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.pos-bottom-left {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.pos-top-right {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.relcontain {
+    position: relative;
+}
+
+.btnArrow { 
+    width: 40%;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -90,6 +128,17 @@ body {
         font-size: 8rem;
     }
 
+    .btnArrow { 
+        width: 60%;
+    }
+
+    .home--proj-name {
+        font-size: 1.8rem;
+    }
+
+    .home--proj-date {
+        text-underline-offset: -35px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
