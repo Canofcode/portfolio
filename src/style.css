@@ -41,6 +41,10 @@ body {
     background-image: none;
 }
 
+.home--background-text-3 {
+    background-image: url("./Images/abt.jpg");
+}
+
 .home--title {
     font-weight: bold;
     font-size: 64px;
@@ -64,7 +68,7 @@ body {
 
 .home--desc-title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 49px;
     color: #55508e;
 }
@@ -88,6 +92,11 @@ body {
 
 .purple {
     color: #55508E;
+}
+
+.purple-title {
+    color: #55508E;
+    font-weight: bold;
 }
 
 .home--date-two {
@@ -130,6 +139,37 @@ body {
     height: 350px;
 }
 
+.home--achievements-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 49px;
+    color: #55508e;
+    text-align: center;
+}
+
+.home--achievement-date {
+    font-weight: 700;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.home--achievement-date-2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.hr {
+    height: 10px;
+    border: none;
+    background-color: #55508E;
+}
+
+.purple-title-2 {
+    color: #55508E;
+    font-weight: bold;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .home--background-text-1 { 
@@ -165,6 +205,29 @@ body {
     .home--proj-two-text {
         width: 100%;
         height: 100%;
+    }
+
+    .home--achievements-title {
+        text-align: left;
+        font-size: 4.3rem;
+    }
+
+    .purple-title {
+        font-size: 2.3rem;
+    }
+
+    .purple-title-2 {
+        font-size: 2.3rem;
+        text-align: right;
+    }
+
+    .home--achievement-date {
+        font-size: 1.4rem;
+    }
+
+    .home--achievement-date-2 {
+        font-size: 1.4rem;        
+        text-align: right;
     }
 }
 

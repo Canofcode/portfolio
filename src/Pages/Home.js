@@ -8,7 +8,7 @@ import { Col, Row, Image, Container, Button } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <Container>
+    <Container className="ms-md-5 me-md-5">
       <Row className="home--background-text-2 home--background-style">
         <Col md={{ span: 4, offset: 2 }}>
           <div className="pt-2 home--background-text-1 home--background-style">
@@ -27,7 +27,7 @@ const Home = () => {
       </Row>
       <Row>
         <Col md={{ span: 5, offset: 2 }}>
-          <h3 className="mt-5 pt-md-4 text-center home--desc-title" id="projects">My Featured Projects</h3>
+          <h2 className="mt-5 pt-md-4 text-center home--desc-title" id="projects">My Featured Projects</h2>
         </Col>
       </Row>
       <div className="home--background-style home--projects-background-text">
@@ -61,6 +61,63 @@ const Home = () => {
           </div>
         </Col>
       </Row>
+      <Row>
+        <Col md={{ span: 5, offset: 6 }}>
+          <p className="mb-5 mt-5 p-3 home--desc">Hi my name is Kurtis and I like Apex Hi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like Apex</p>
+        </Col>
+      </Row>
+      <div className="home--background-text-3 home--background-style">
+        <h2 className="mt-5 mb-5 home--achievements-title">Achievements</h2>
+        <Row>
+          <Col md={{ span: 5, offset: 0 }}>
+            <p className="mt-5 mb-5 purple">Hi my name is Kurtis and I like Apex Hi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like Apex</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 5, offset: 0 }}>
+            <h4 className="mt-5 purple-title">Certificate of Information Technologies Essentials (Level 4)</h4>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p className="home--achievement-date mt-4">3rd December 2018</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={{ span: 1, offset: 10 }} md={{ span: 1, offset: 4 }}>
+            <p className="purple-title text-right">01</p>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={{ span: 5, offset: 0 }}>
+            <p className="hr"><hr /></p>
+          </Col>
+        </Row>
+
+        <Row className="mt-5 pt-5">
+          <Col md={{ span: 5, offset: 7 }}>
+            <h4 className="mt-5 purple-title-2">JADE Team Project Winner</h4>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 3, offset: 9 }}>
+            <p className="home--achievement-date-2 mt-4 me-md-5">2020</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={{ span: 1, offset: 10 }} md={{ span: 1, offset: 11 }}>
+            <p className="purple-title text-right">01</p>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={{ span: 5, offset: 7 }}>
+            <p className="hr"><hr /></p>
+          </Col>
+        </Row>
+      </div>
+
     </Container>
   )
 };
