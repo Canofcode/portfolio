@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
             </Nav.Link>
             <Row>
-                <Col className="text-center col-4 offset-4 col-md-12 offset-md-0">
+                <Col className="text-center col-4 offset-4 col-md-12 offset-md-0 footer--col">
                     <Nav className='justify-content-center'>
                         <Nav.Link to="#home" href="#home">
                             <div className='footer--nav-items'>Home</div>

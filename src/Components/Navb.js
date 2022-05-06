@@ -16,19 +16,28 @@ const Navb = () => {
         <NavbarCollapse className="navb--navbar-align-right">
           <Nav>
             <Nav.Link to="#home" href="#home">
-              Home
+              <div className="navbar--items">
+                Home
+              </div>
+
             </Nav.Link>
 
             <Nav.Link to="#projects" href="#projects">
-              Projects
+              <div className="navbar--items">
+                Projects
+              </div>
             </Nav.Link>
 
             <Nav.Link to="#achievements" href="#achievements">
-              Achievements
+              <div className="navbar--items">
+                Achievements
+              </div>
             </Nav.Link>
 
             <Nav.Link to="#contact" href="#contact">
-              Contact
+              <div className="navbar--items">
+                Contact
+              </div>
             </Nav.Link>
           </Nav>
         </NavbarCollapse>

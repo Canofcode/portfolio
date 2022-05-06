@@ -11,7 +11,7 @@ body {
 .navbar--brand {
   margin: 0px;
   padding: 0px 0px 0px 30px;
-  color: #55508e;
+  color: #55508E;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -19,6 +19,15 @@ body {
 
 .navbar--color {
     background-color: #ffffff;
+}
+
+.navbar--items {
+    color: #55508E;
+    font-weight: bold;
+}
+
+.navbar--items:hover {
+    color: #7B7B7B;
 }
 
 .navb--navbar-align-right {
@@ -64,6 +73,7 @@ body {
 .home--desc {
     background-color: #55508e;
     color: #ffffff;
+    font-size: 1.3rem;
 }
 
 .home--desc-title {
@@ -97,10 +107,16 @@ body {
 .purple-title {
     color: #55508E;
     font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.achieve-desc {
+    color: #55508E;
+    font-size: 1.1rem
 }
 
 .home--date-two {
-    margin-top: 83px;
+    margin-top: 59px;
 }
 
 
@@ -165,6 +181,8 @@ body {
 .purple-title-2 {
     color: #55508E;
     font-weight: bold;
+    font-size: 2.4rem;
+
 }
 
 .footer--kd {
@@ -176,9 +194,14 @@ body {
 }
 
 .footer--nav-items {
-    margin: 15px;
+    margin: 8px;
     color: white;
 }
+
+.footer--nav-items:hover {
+    color: #7B7B7B;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -238,6 +261,22 @@ body {
     .home--achievement-date-2 {
         font-size: 1.4rem;        
         text-align: right;
+    }
+
+    .footer--nav-items {
+        margin: 15px;
+    }
+
+    .footer--col {
+        padding-left: 68px;
+    }
+
+    .navbar--items {
+        padding: 15px;
+    }
+
+    .achieve-desc {
+        font-size: 1.3rem
     }
 }
 
