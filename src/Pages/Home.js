@@ -4,11 +4,19 @@ import pp from "../Images/pp.jpg"
 import sp from "../Images/sp.jpg"
 import sp2 from "../Images/sp2.jpg"
 import btnArrow from "../Images/btnArrow.png"
-import { Col, Row, Image, Container, Button } from "react-bootstrap";
+import { Col, Row, Image, Container, Button, Form, FormControl, InputGroup, FormLabel } from "react-bootstrap";
+import { useForm, ValidationError } from '@formspree/react';
 
 const Home = () => {
+
+  const [state, handleSubmit] = useForm("mqkngvnv");
+  if (state.succeeded) {
+    return <p>Thank you for gettin in contact, I will be in contact with you in 1-2 working days.</p>;
+  }
+
   return (
-    <Container className="ms-md-5 me-md-5">
+
+    <Container fluid className="ps-md-5 pe-md-5">
       <Row className="home--background-text-2 home--background-style">
         <Col md={{ span: 4, offset: 2 }}>
           <div className="pt-2 home--background-text-1 home--background-style">
@@ -48,7 +56,7 @@ const Home = () => {
       </div>
 
       <Row className="pt-5 mt-5">
-        <Col className="p-0" md={{ span: 7, offset: 0 }}>
+        <Col className="p-0 m-0" md={{ span: 7, offset: 0 }}>
           <Image fluid src={sp2}></Image>
         </Col>
         <Col className="m-0 p-0" md={{ span: 5, offset: 0 }}>
@@ -107,7 +115,7 @@ const Home = () => {
         </Row>
         <Row>
           <Col xs={{ span: 1, offset: 10 }} md={{ span: 1, offset: 11 }}>
-            <p className="purple-title text-right">01</p>
+            <p className="purple-title text-right">02</p>
           </Col>
         </Row>
 
@@ -118,6 +126,29 @@ const Home = () => {
         </Row>
       </div>
 
+      <Row>
+        <Col md={{ span: 5, offset: 2 }}>
+          <h2 className="mt-5 pt-5 mb-5 home--achievements-title">Contact me</h2>
+        </Col>
+      </Row>
+
+      <Row className="pt-3">
+        <Col md={{ span: 5, offset: 2 }}>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label style={{ color: "#55508E", fontWeight: "bold" }}>Email address:</Form.Label>
+              <Form.Control id="email" name="email" type="email" placeholder="Enter email" />
+            </Form.Group>
+            <Form.Label style={{ color: "#55508E", fontWeight: "bold" }} className="mt-3">Message:</Form.Label>
+            <InputGroup>
+              <FormControl id="message" name="message" as="textarea" placeholder="Please be sure to include a name and company along with your message :)" aria-label="With textarea" />
+            </InputGroup>
+            <Button className="mt-3" style={{ backgroundColor: "#55508E" }} type="submit" disabled={state.submitting}>
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Row>
     </Container>
   )
 };
