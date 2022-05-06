@@ -1,14 +1,15 @@
 import React from "react";
-import Router from "./Components/Router";
 import Navb from "./Components/Navb";
 import "./style.css";
 import Footer from "./Components/Footer";
+import Home from "./Home";
+
 
 const App = () => {
   return (
     <div>
       <Navb />
-      <Router />
+      <Home />
       <Footer />
     </div>
   );

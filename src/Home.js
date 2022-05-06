@@ -1,11 +1,11 @@
 import React from "react";
-import "../style.css"
-import pp from "../Images/pp.jpg"
-import sp from "../Images/sp.jpg"
-import sp2 from "../Images/sp2.jpg"
-import btnArrow from "../Images/btnArrow.png"
-import { Col, Row, Image, Container, Button, Form, FormControl, InputGroup, FormLabel } from "react-bootstrap";
-import { useForm, ValidationError } from '@formspree/react';
+import "./style.css"
+import pp from "./Images/pp.jpg"
+import sp from "./Images/sp.jpg"
+import sp2 from "./Images/sp2.jpg"
+import btnArrow from "./Images/btnArrow.png"
+import { Col, Row, Image, Container, Button, Form, FormControl, InputGroup } from "react-bootstrap";
+import { useForm } from '@formspree/react';
 
 const Home = () => {
 
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
 
-    <Container fluid className="ps-md-5 pe-md-5">
+    <Container fluid className="ps-md-5 pe-md-5" id="home">
       <Row className="home--background-text-2 home--background-style">
         <Col md={{ span: 4, offset: 2 }}>
           <div className="pt-2 home--background-text-1 home--background-style">
@@ -75,7 +75,7 @@ const Home = () => {
         </Col>
       </Row>
       <div className="home--background-text-3 home--background-style">
-        <h2 className="mt-5 mb-5 home--achievements-title">Achievements</h2>
+        <h2 id="achievements" className="mt-5 mb-5 home--achievements-title">Achievements</h2>
         <Row>
           <Col md={{ span: 5, offset: 0 }}>
             <p className="mt-5 mb-5 purple">Hi my name is Kurtis and I like Apex Hi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like ApexHi my name is Kurtis and I like Apex</p>
@@ -120,13 +120,13 @@ const Home = () => {
         </Row>
 
         <Row>
-          <Col md={{ span: 5, offset: 7 }}>
+          <Col md={{ span: 4, offset: 8 }}>
             <p className="hr"><hr /></p>
           </Col>
         </Row>
       </div>
 
-      <Row>
+      <Row id="contact">
         <Col md={{ span: 5, offset: 2 }}>
           <h2 className="mt-5 pt-5 mb-5 home--achievements-title">Contact me</h2>
         </Col>

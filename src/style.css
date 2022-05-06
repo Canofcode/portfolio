@@ -103,9 +103,6 @@ body {
     margin-top: 83px;
 }
 
-.home--proj-name-two {
-
-}
 
 .pos-bottom-right {
     bottom: 0;
@@ -168,6 +165,19 @@ body {
 .purple-title-2 {
     color: #55508E;
     font-weight: bold;
+}
+
+.footer--kd {
+    font-size: 1.8rem;
+}
+
+.white {
+    color: white;
+}
+
+.footer--nav-items {
+    margin: 15px;
+    color: white;
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
@@ -16,16 +15,19 @@ const Navb = () => {
         <Navbar.Toggle className="me-4" style={{ background: "#ffffff", outline: "none", boxShadow: "none" }} />
         <NavbarCollapse className="navb--navbar-align-right">
           <Nav>
-            <Nav.Link as={Link} to="/home" href="/home">
+            <Nav.Link to="#home" href="#home">
               Home
             </Nav.Link>
+
             <Nav.Link to="#projects" href="#projects">
               Projects
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/about" href="/about">
-              About
-            </Nav.Link> */}
-            <Nav.Link as={Link} to="/contact" href="/contact">
+
+            <Nav.Link to="#achievements" href="#achievements">
+              Achievements
+            </Nav.Link>
+
+            <Nav.Link to="#contact" href="#contact">
               Contact
             </Nav.Link>
           </Nav>
